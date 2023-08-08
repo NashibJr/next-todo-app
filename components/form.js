@@ -12,7 +12,7 @@ const Form = () => {
       <button
         type="button"
         name="button"
-        className="text-white bg-blue-800 mt-2 p-1 rounded-sm w-1/4 mx-auto"
+        className="text-white bg-blue-800 mt-2 p-1 rounded-sm w-1/4 mx-auto hover:opacity-80"
       >
         ADD
       </button>
