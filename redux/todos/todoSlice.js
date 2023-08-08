@@ -1,7 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  todos: [],
+  todos: [
+    { id: nanoid(), todo: "Task 1", status: "pending" },
+    { id: nanoid(), todo: "Task 2", status: "completed" },
+  ],
   status: "idle",
   error: "",
 };

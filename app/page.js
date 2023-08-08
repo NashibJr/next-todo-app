@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Todos from "@/components/Todos";
 import Form from "@/components/form";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <Header />
       <Form />
+      <Todos />
     </div>
   );
 };
