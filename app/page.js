@@ -6,8 +6,7 @@ import Form from "@/components/form";
 import { useSelector } from "react-redux";
 
 const Home = () => {
-  const state = useSelector((state) => state.todos);
-  const todos = state?.todos;
+  const todos = useSelector((state) => state.todos);
   return (
     <div>
       <Header />
