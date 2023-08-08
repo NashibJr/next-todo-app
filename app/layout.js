@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import "@/styles/styles.css";
+import TodoProvider from "@/redux/app/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
         className={`${inter.className} bg-inherit`}
         suppressHydrationWarning={true}
       >
-        {children}
+        <TodoProvider>{children}</TodoProvider>
       </body>
     </html>
   );
