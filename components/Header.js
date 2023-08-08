@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex justify-center items-center bg-blue-800 text-white w-full p-4">
+    <div className="flex justify-center items-center bg-blue-800 text-white w-full p-4 sticky">
       <h1>Todo App</h1>
     </div>
   );
