@@ -3,10 +3,8 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const initialState = {
   todos: [
     { id: nanoid(), todo: "Task 1", status: "pending" },
-    { id: nanoid(), todo: "Task 2", status: "completed" },
+    { id: nanoid(), todo: "Task 2", status: "pending" },
   ],
-  status: "idle",
-  error: "",
 };
 
 const todoSlice = createSlice({
