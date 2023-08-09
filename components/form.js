@@ -10,7 +10,10 @@ const Form = () => {
   const dispatch = useDispatch();
 
   return (
-    <form className="flex flex-col p-3 m-3 sm:w-3/4 sm:mx-auto md:w-1/2 xl:w-1/3 form-content rounded-sm">
+    <form
+      className="flex flex-col p-3 m-3 sm:w-3/4 sm:mx-auto md:w-1/2 xl:w-1/3 form-content rounded-sm"
+      onSubmit={(event) => event.preventDefault()}
+    >
       <input
         type="text"
         name="todo"
