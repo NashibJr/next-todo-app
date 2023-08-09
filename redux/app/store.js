@@ -6,7 +6,7 @@ import { getDefaultMiddleware } from "@reduxjs/toolkit";
 
 const persistConfig = {
   key: "root",
-  storage,
+  storage: storage,
 };
 
 const middleWare = getDefaultMiddleware({ serializableCheck: false });
