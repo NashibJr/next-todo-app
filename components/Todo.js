@@ -1,12 +1,10 @@
-"use client";
-
 import React from "react";
 import { MdDelete } from "react-icons/md";
 import { AiTwotoneEdit } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { deleteTodo } from "@/redux/todos/todoSlice";
 
-const Todo = ({ todo: { todo, status, id } }) => {
+const Todo = ({ todo: { todo, status, id }, showModal }) => {
   const [isCompleted, setIsCompleted] = React.useState(false);
   const [isChecked, setIsChecked] = React.useState(false);
   const dispatch = useDispatch();
@@ -34,7 +32,10 @@ const Todo = ({ todo: { todo, status, id } }) => {
         <p className="text-sm ml-4 font-semibold">{todo}</p>
       </div>
       <div className="flex">
-        <span className="w-8 cursor-pointer flex justify-center items-center mr-1">
+        <span
+          className="w-8 cursor-pointer flex justify-center items-center mr-1"
+          onClick={showModal}
+        >
           <AiTwotoneEdit />
         </span>
         <span

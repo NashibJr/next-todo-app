@@ -1,5 +1,3 @@
-"use client";
-
 import { addTodo } from "@/redux/todos/todoSlice";
 import { nanoid } from "@reduxjs/toolkit";
 import React from "react";
